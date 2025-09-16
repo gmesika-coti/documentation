@@ -8,6 +8,6 @@ COTI V2 is the next evolution of the COTI protocol, designed to bring privacy, s
 
 **Hard Forks**
 
-| Version                               | Hard Fork | Block # |
-| ------------------------------------- | --------- | ------- |
-| [v.1.1.4](../release-notes/v1.1.4.md) | hydrogen  | TBD     |
+| Version                               | Hard Fork | Block #                                                              |
+| ------------------------------------- | --------- | -------------------------------------------------------------------- |
+| [v.1.1.4](../release-notes/v1.1.4.md) | hydrogen  | <ul><li>3,640,378</li><li>October 19, 2025 at 12:00 PM UTC</li></ul> |
