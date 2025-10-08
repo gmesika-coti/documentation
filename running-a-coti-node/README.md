@@ -63,7 +63,8 @@ _**Disclaimer**: The above configuration has been certified on Testnet; higher t
 
 #### Open Ports: Protocol and Purpose
 
-You must open the following ports in your host firewall (e.g., UFW) and your cloud environment's security groups to allow inbound traffic. Note that different protocols (TCP/UDP) are used for different purposes.
+You should open the following ports in your host firewall (e.g., UFW) **and** in your cloud provider’s security groups to permit inbound traffic.\
+Be aware that **different ports use different protocols (TCP/UDP)** depending on their purpose.
 
 <table><thead><tr><th width="80">Port</th><th width="104.5">Protocol</th><th width="275">Purpose</th><th>Notes</th></tr></thead><tbody><tr><td>7400</td><td>TCP</td><td>Peer-to-Peer (P2P) Communication</td><td>Data layer used for establishing a connection, exchanging blocks, and synchronizing blockchain data with other nodes.</td></tr><tr><td>7400</td><td>UDP</td><td>Node Discovery (Discv4/Discv5)</td><td>Discovery layer used to quickly find the addresses of other nodes on the network, including the bootnodes and all other peers. </td></tr><tr><td>8545</td><td>TCP</td><td>HTTP-RPC API</td><td>Used for external applications to query chain data and submit transactions over HTTP. </td></tr><tr><td>8546</td><td>TCP</td><td>WebSocket-RPC API</td><td>Used for real-time communication, allowing external applications to receive live updates and subscribe to blockchain events. <br></td></tr></tbody></table>
 
