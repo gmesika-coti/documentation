@@ -59,12 +59,14 @@ _**Disclaimer**: The above configuration has been certified on Testnet; higher t
 * AWS: r5n.2xlarge (8 vCPUs, 64GB memory)
 * OVH: r2-120 (8 vCPUs, 120GB memory)
 
-#### Network
+### Network Configuration
 
-* **Open Ports**: You need to open the following ports in your firewall or cloud environment to allow inbound connections:
-  * 8545 - Allowing RPC requests to flow in
-  * 8546 - Allowing WebSocket connection to flow in
-  * 7400 - Allowing peer-to-peer connection
+#### Open Ports: Protocol and Purpose
+
+You must open the following ports in your host firewall (e.g., UFW) and your cloud environment's security groups to allow inbound traffic. Note that different protocols (TCP/UDP) are used for different purposes.
+
+<table><thead><tr><th width="80">Port</th><th width="104.5">Protocol</th><th width="275">Purpose</th><th>Notes</th></tr></thead><tbody><tr><td>7400</td><td>TCP</td><td>Peer-to-Peer (P2P) Communication</td><td>Data layer used for establishing a connection, exchanging blocks, and synchronizing blockchain data with other nodes.</td></tr><tr><td>7400</td><td>UDP</td><td>Node Discovery (Discv4/Discv5)</td><td>Discovery layer used to quickly find the addresses of other nodes on the network, including the bootnodes and all other peers. </td></tr><tr><td>8545</td><td>TCP</td><td>HTTP-RPC API</td><td>Used for external applications to query chain data and submit transactions over HTTP. </td></tr><tr><td>8546</td><td>TCP</td><td>WebSocket-RPC API</td><td>Used for real-time communication, allowing external applications to receive live updates and subscribe to blockchain events. <br></td></tr></tbody></table>
+
 * **Static IP**: Required to ensure stable RPC access, enabling continuous health monitoring.
 
 ***
@@ -149,7 +151,15 @@ The following recommended steps reflect best practices but should be performed c
     {% endcode %}
 
 
-4. **Start Your Node**
+4.  **Checkout the stable release tag (Recommended):**
+
+    * NOTE: Replace `v1.1.4-mainnet` with the actual latest stable tag (e.g., `v1.1.4-discovery` for Testnet).
+
+    ```bash
+    git checkout tags/<latest_stable_tag>
+    # Example for Mainnet: git checkout tags/v1.1.4-mainnet
+    ```
+5. **Start Your Node**
    1.  Navigate to the newly created "coti-full-node" directory
 
        {% code fullWidth="false" %}
