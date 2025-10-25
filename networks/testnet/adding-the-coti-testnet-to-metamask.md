@@ -6,7 +6,7 @@ Follow these instructions to add the COTI testnet directly to your MetaMask wall
 
 1. Open MetaMask.
 2. Click on the dropdown of networks and select **"Add a Custom Network"**.\
-   ![](<../../.gitbook/assets/image (1).png>).            ![](<../../.gitbook/assets/image (1) (2).png>)
+   ![](<../../.gitbook/assets/image (1) (2).png>).            ![](<../../.gitbook/assets/image (1) (2) (1).png>)
 3. Fill in the following info based on the network you wish to add:
 
 | Parameter          | TESTNET                                                    |
