@@ -30,6 +30,7 @@
     * [Supported Operations on Private Data Types](build-on-coti/core-concepts/secure-operations-and-gas.md)
   * [Quickstart](build-on-coti/quickstart.md)
   * [Guides](build-on-coti/guides/README.md)
+    * [Setting up COTI Snap with your MetaMask wallet](build-on-coti/guides/setting-up-coti-snap-with-your-metamask-wallet.md)
     * [Basic Private Smart Contract](build-on-coti/guides/basic-private-smart-contract.md)
     * [Account Onboard](build-on-coti/guides/account-onboard.md)
     * [Sending a Transaction with Encrypted Inputs](build-on-coti/guides/sending-a-transaction-with-encrypted-inputs.md)
@@ -73,3 +74,7 @@
   * [X](https://twitter.coti.io)
   * [YouTube](https://youtube.coti.io)
 * [COTI Builders Program](https://cotinetwork.notion.site/Overview-COTI-Builders-Program-f742a22ff8ef4e648935362b9b4a9c34)
+
+## Security
+
+* [Audit Roports](security/audit-roports.md)
