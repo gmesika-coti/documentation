@@ -10,5 +10,5 @@ You can find all published audit reports here:
 
 | Date     | Reviewer | Scope           | Link                                                                                               |
 | -------- | -------- | --------------- | -------------------------------------------------------------------------------------------------- |
-| 2025 - 3 | Sayfer   | Account Onboard | [2025\_Sayfer](https://drive.google.com/file/d/1jay4rKCMx9iZg2bqzq-upGZgnAT04PaH/view?usp=sharing) |
+| 2025 - 3 | Sayfer   | Account Onboard | https://github.com/coti-io/documentation/blob/main/security/Sayfer%20Smart%20Contract%20Audit%20for%20Coti%20(3).pdf |
 | 2025 - 3 | Sayfer   | gCOTI           | [2025\_Sayfer](https://drive.google.com/file/d/1jay4rKCMx9iZg2bqzq-upGZgnAT04PaH/view?usp=sharing) |
