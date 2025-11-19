@@ -12,5 +12,4 @@ Testnet runs the same code as the COTI v2 Mainnet, designed to provide a pre-pro
 
 **Hard Forks**
 
-<table><thead><tr><th width="219">Version</th><th width="223">Hard Fork</th><th>Block #</th></tr></thead><tbody><tr><td><a href="../release-notes/v1.1.4.md">v.1.1.4</a></td><td>hydrogen</td><td><ul><li>2,325,800</li><li>July 22, 2025 at 12:00 PM UTC</li></ul></td></tr></tbody></table>
-
+<table><thead><tr><th width="219">Version</th><th width="223">Hard Fork</th><th>Block #</th></tr></thead><tbody><tr><td><a href="../release-notes/v1.1.4.md">v.1.1.4</a></td><td>hydrogen</td><td><ul><li>2,325,800</li><li>July 22, 2025 at 12:00 PM UTC</li></ul></td></tr><tr><td><a href="../release-notes/v1.2.0.md">v1.2.0</a></td><td>helium</td><td><ul><li>4,602,680</li></ul></td></tr></tbody></table>
