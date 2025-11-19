@@ -4,6 +4,7 @@
 * [Networks](networks/README.md)
   * [Release Notes](networks/release-notes/README.md)
     * [v1.1.4](networks/release-notes/v1.1.4.md)
+    * [v1.2.0](networks/release-notes/v1.2.0.md)
   * [MainNet](networks/mainnet/README.md)
     * [Adding the COTI Mainnet to MetaMask](networks/mainnet/adding-the-coti-mainnet-to-metamask.md)
     * [Contracts Addresses](networks/mainnet/contracts-addresses.md)
