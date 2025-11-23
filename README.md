@@ -1,6 +1,7 @@
 # Welcome
 
 {% embed url="https://youtu.be/AvEBZp4Uv_Y?feature=shared" %}
+[![COTI Website](https://img.shields.io/badge/COTI%20WEBSITE-4CAF50?style=for-the-badge)](https://coti.io)
 
 ### About COTI
 
