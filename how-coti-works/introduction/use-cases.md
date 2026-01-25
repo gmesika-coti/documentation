@@ -7,10 +7,6 @@ description: >-
 
 # Use Cases
 
-## Use Cases
-
-COTI brings privacy to the public blockchain era,enabling individuals, institutions, and developers to unlock new forms of on-chain innovation without compromising confidentiality or compliance.
-
 
 
 ### 1. Confidential Transactions
