@@ -16,7 +16,7 @@
   * [Introduction](how-coti-works/introduction/README.md)
     * [EVM Introduction](how-coti-works/introduction/evm-introduction.md)
     * [Conceptual Overview](how-coti-works/introduction/garbled-circuits.md)
-    * [Use Cases and Applications](how-coti-works/introduction/use-cases.md)
+    * [Use Cases](how-coti-works/introduction/use-cases.md)
     * [COTI Architecture](how-coti-works/introduction/coti-architecture.md)
   * [Advanced Topics](how-coti-works/advanced-topics/README.md)
     * [Garbled Circuits](how-coti-works/advanced-topics/garbled-circuits.md)

@@ -32,7 +32,7 @@ COTI Full Node software is provided as a docker image.
 
 * **Operating System**: the following operating systems have been certified to run the node software:
   * Ubuntu 24.04.x (see [**Linux Requirements for Docker**](https://docs.docker.com/desktop/setup/install/linux/#general-system-requirements)**)**
-* **Docker**:  version 28.0.1
+* **Docker**: version 28.0.1
 * **Docker-Compose:** version 2.29.1
 
 #### Hardware
@@ -66,7 +66,7 @@ _**Disclaimer**: The above configuration has been certified on Testnet; higher t
 You should open the following ports in your host firewall (e.g., UFW) **and** in your cloud provider’s security groups to permit inbound traffic.\
 Be aware that **different ports use different protocols (TCP/UDP)** depending on their purpose.
 
-<table><thead><tr><th width="80">Port</th><th width="104.5">Protocol</th><th width="275">Purpose</th><th>Notes</th></tr></thead><tbody><tr><td>7400</td><td>TCP</td><td>Peer-to-Peer (P2P) Communication</td><td>Data layer used for establishing a connection, exchanging blocks, and synchronizing blockchain data with other nodes.</td></tr><tr><td>7400</td><td>UDP</td><td>Node Discovery (Discv4/Discv5)</td><td>Discovery layer used to quickly find the addresses of other nodes on the network, including the bootnodes and all other peers. </td></tr><tr><td>8545</td><td>TCP</td><td>HTTP-RPC API</td><td>Used for external applications to query chain data and submit transactions over HTTP. </td></tr><tr><td>8546</td><td>TCP</td><td>WebSocket-RPC API</td><td>Used for real-time communication, allowing external applications to receive live updates and subscribe to blockchain events. <br></td></tr></tbody></table>
+<table><thead><tr><th width="80">Port</th><th width="104.5">Protocol</th><th width="275">Purpose</th><th>Notes</th></tr></thead><tbody><tr><td>7400</td><td>TCP</td><td>Peer-to-Peer (P2P) Communication</td><td>Data layer used for establishing a connection, exchanging blocks, and synchronizing blockchain data with other nodes.</td></tr><tr><td>7400</td><td>UDP</td><td>Node Discovery (Discv4/Discv5)</td><td>Discovery layer used to quickly find the addresses of other nodes on the network, including the bootnodes and all other peers.</td></tr><tr><td>8545</td><td>TCP</td><td>HTTP-RPC API</td><td>Used for external applications to query chain data and submit transactions over HTTP.</td></tr><tr><td>8546</td><td>TCP</td><td>WebSocket-RPC API</td><td>Used for real-time communication, allowing external applications to receive live updates and subscribe to blockchain events.<br></td></tr></tbody></table>
 
 * **Static IP**: Required to ensure stable RPC access, enabling continuous health monitoring.
 
@@ -89,69 +89,69 @@ The following recommended steps reflect best practices but should be performed c
 1. **Recommended steps:**
    1.  Set host name (where `<name>`is your chosen node name)
 
-       {% code fullWidth="false" %}
+       \{% code fullWidth="false" %\}
+
        ```bash
        sudo hostnamectl set-hostname <name>-full-node
        ```
-       {% endcode %}
 
-
+       \{% endcode %\}
    2.  Update package lists
 
-       {% code fullWidth="false" %}
+       \{% code fullWidth="false" %\}
+
        ```bash
        sudo apt update
        sudo apt upgrade
        ```
-       {% endcode %}
 
-
+       \{% endcode %\}
    3.  Reboot system
 
-       {% code fullWidth="false" %}
+       \{% code fullWidth="false" %\}
+
        ```bash
        sudo reboot
        ```
-       {% endcode %}
 
-
+       \{% endcode %\}
    4.  Update OS
 
-       {% code fullWidth="false" %}
+       \{% code fullWidth="false" %\}
+
        ```bash
        sudo do-release-upgrade
        ```
-       {% endcode %}
 
-
+       \{% endcode %\}
 2. **Configure Docker**
    *   Add your user to the `docker` group:
 
-       {% code fullWidth="false" %}
+       \{% code fullWidth="false" %\}
+
        ```bash
        sudo usermod -aG docker $( whoami )
        ```
-       {% endcode %}
 
-
+       \{% endcode %\}
    *   Logout and re-login
 
-       {% code fullWidth="false" %}
+       \{% code fullWidth="false" %\}
+
        ```bash
        logout
        ```
-       {% endcode %}
 
-
+       \{% endcode %\}
 3.  **Clone the COTI Full Node project**
 
-    {% code fullWidth="false" %}
+    \{% code fullWidth="false" %\}
+
     ```bash
     git clone https://github.com/coti-io/coti-full-node.git
     ```
-    {% endcode %}
 
-
+    \{% endcode %\}
 4.  **Checkout the stable release tag (Recommended):**
 
     * NOTE: Replace `v1.1.4-mainnet` with the actual latest stable tag (e.g., `v1.1.4-discovery` for Testnet).
@@ -163,20 +163,18 @@ The following recommended steps reflect best practices but should be performed c
 5. **Start Your Node**
    1.  Navigate to the newly created "coti-full-node" directory
 
-       {% code fullWidth="false" %}
+       \{% code fullWidth="false" %\}
+
        ```bash
        cd coti-full-node
        ```
-       {% endcode %}
 
-
+       \{% endcode %\}
    2.  Execute node start script
 
        ```
        ./start_coti-full-node.sh
        ```
-
-
    3.  Once the docker-compose has started the node, liveliness check will be executed
 
        ```
@@ -198,8 +196,6 @@ If liveliness check passed locally it means that your node is syncing with the o
 
 5.  **To Check Node Logs**
 
-
-
     ```
     docker logs -f coti-full-node
     ```
@@ -210,20 +206,22 @@ To restart your node follow these steps:
 
 1.  Stop your node
 
-    {% code fullWidth="false" %}
+    \{% code fullWidth="false" %\}
+
     ```bash
     ./stop_coti-full-node.sh
     ```
-    {% endcode %}
 
-
+    \{% endcode %\}
 2.  Start your node
 
-    {% code fullWidth="false" %}
+    \{% code fullWidth="false" %\}
+
     ```bash
     ./start_coti-full-node.sh
     ```
-    {% endcode %}
+
+    \{% endcode %\}
 
 ### Node Configuration
 
@@ -237,7 +235,7 @@ If you are running a node without a license, no further configuration of the nod
 Metrics monitoring is not available yet for Testnet .
 {% endhint %}
 
-* Node availability is crucial for the smooth operation of the network. \
+* Node availability is crucial for the smooth operation of the network.\
   \
   To evaluate node availability, COTI leverages a monitoring platform that publishes this data. A node is considered available if it successfully responds to the `eth_blockNumber` request. Using this request ensures the node is actively synchronized with the network and functioning correctly.
 
@@ -269,13 +267,13 @@ Where to Get Help:
 
 ### FAQ
 
-1. How many nodes can I run?&#x20;
+1. How many nodes can I run?
    1. There’s no set limit, but each node requires its own resources. Running multiple nodes can help decentralize the network but comes with higher operational costs.
 2. Can I run a node on a VPS or cloud platform?
    1. Absolutely. Just ensure the service meets the hardware, OS, and networking requirements.
 3. Do I earn more rewards by running a more powerful node?
    1. Generally, consistently high uptime can lead to more consistent rewards, however, the only measure to qualify for rewards is uptime.
-4. Is it mandatory to purchase a node license to run a node?&#x20;
+4. Is it mandatory to purchase a node license to run a node?
    1. No. A node license simply allows you to earn rewards for helping decentralize the network, however, it is not necessary to run a COTI node.
 
 ### Next Steps

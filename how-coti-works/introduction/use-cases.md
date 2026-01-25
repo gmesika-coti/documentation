@@ -1,44 +1,85 @@
-# Use Cases and Applications
+---
+description: >-
+  COTI brings privacy to the public blockchain era,enabling individuals,
+  institutions, and developers to unlock new forms of on-chain innovation
+  without compromising confidentiality or compliance.
+---
 
-The incorporation of advanced privacy features expands the possibilities for applications across various sectors. Privacy is at the forefront of these blockchain implementations, offering functionality previously unattainable in public or transparent blockchains.&#x20;
+# Use Cases
 
-1. Secure tokenization becomes feasible, enabling the exchange of assets while protecting the confidentiality of transaction details. See [**PrivateERC20.sol**](https://github.com/coti-io/coti-contracts/blob/main/contracts/token/PrivateERC20/PrivateERC20.sol).
-2. Blind auctions can be conducted with utmost privacy, ensuring that bidding amounts remain hidden from public view.  See [**PrivateAuction.sol**](https://github.com/coti-io/coti-contracts-examples/blob/main/contracts/PrivateAuction.sol).
-3. On-chain gaming experiences are enhanced, with privacy mechanisms ensuring the secrecy of players' moves and choices until they opt to reveal them.&#x20;
-4. Confidential voting systems maintain the integrity of elections by preserving the privacy of voters' decisions.&#x20;
-5. Private identity registry systems allow authorized registrars to manage user identities and associated encrypted identifiers, while enforcing access control through permissions and ownership mechanisms. See [**PrivateIdentityRegistry.sol**](https://github.com/coti-io/coti-contracts-examples/blob/main/contracts/PrivateIdentityRegistry.sol).
+## Use Cases
 
-{% hint style="info" %}
-See more use cases and examples on the [**coti-contracts repo on GitHub**](https://github.com/coti-io/coti-contracts/tree/main/contracts).
-{% endhint %}
+COTI brings privacy to the public blockchain era,enabling individuals, institutions, and developers to unlock new forms of on-chain innovation without compromising confidentiality or compliance.
 
-These innovative use cases highlight the transformative potential of private blockchains, revolutionizing various industries with unparalleled levels of confidentiality, security, and transparency.
 
-The following high level applications are enabled by the COTI V2 network:
 
-1.  **Confidential DeFi**\
-    DeFi has redefined the financial industry’s landscape, introducing new potential functionalities. Nonetheless, the inherent transparency of on-chain activities necessitates a compromise on privacy, deterring institutional engagement due to regulatory concerns. COTI V2 introduces confidential transactions, enhancing privacy and security for existing services while complying with regulatory standards, thereby expanding DeFi’s innovation potential. \
-    It addresses long-standing vulnerabilities in Ethereum DeFi, such as exploitation through Miner Extractable Value (MEV), by encrypting transaction details, thus preventing opportunistic behaviors by MEV bots and frontrunners.
+### 1. Confidential Transactions
 
-    \
-    The COTI network provides developers with tools to enhance existing decentralized applications (dApps) with advanced data security features or to innovate new DeFi-centric applications previously unfeasible.\
+Send and receive private tokens securely
 
-2. **Confidential Transactions for Payments, Stablecoins, CBDC and RWA**\
-   The traditional financial ecosystem emphasizes transaction confidentiality to build trust and encourage user participation. Mirroring this attribute in Web3 is crucial for its mainstream adoption. COTI V2 ensures transaction confidentiality while maintaining compliance with regulatory frameworks for digital and real- world assets, offering a mechanism for confidential payments that preserves the transparency of fund flows yet encrypts transaction specifics.\
+Traditional blockchains expose every transaction and balance on-chain.\
+With COTI V2, users can send and receive tokens privately, where transaction amounts, participants, and balances remain fully encrypted while preserving verifiability on the blockchain.
 
-3.  **Confidential Machine Learning and On-Chain Sensitive Data Management**\
-    In the current context of paramount importance placed on data management and privacy, COTI V2 introduces a framework that enables Artificial Intelligence/Machine Learning (AI/ML) models to be trained on sensitive data without compromising the anonymity of individuals. Large Language Models (LLMs) such as ChatGPT depend on substantial volumes of data to enhance their service capabilities. This necessity raises concerns regarding the protection of user privacy and intellectual property (IP). Utilizing Privacy-Preserving Machine Learning (PPML) facilitated by cryptographic methods like garbled circuits (GC), COTI V2 ensures that training on these data does not infringe upon the privacy of data subjects, thus paving the way for new business models.
+Secure tokenization becomes feasible, enabling the exchange of assets while protecting the confidentiality of transaction details.
 
-    \
-    One example is federated learning, a collaborative approach involving multiple stakeholders, each possessing unique datasets. The limited utility of these datasets due to their size or diversity can be overcome by pooling them together, resulting in a collective data pool that enables the development of more accurate machine learning models.
+![](<../../.gitbook/assets/unknown (5).png>)
 
-    \
-    Furthermore, organizations possessing advanced machine-learning models derived from their proprietary data and seeking to provide these models as a service represent another application scenario. An organization with a model that can, for instance, differentiate between images of dogs and cats with high precision might offer this predictive capability to other entities lacking the resources for similar model development. By deploying such a model on a blockchain platform ("on-chain"), the organization can make its classification service available while safeguarding the privacy of the model’s IP and the data being classified. This mechanism, referred to as private inference, allows end-users to access the model’s predictive functionalities without the need to publicly disclose their data.
+<br>
 
-    \
-    These instances illustrate the initial applications of integrating privacy-preserving techniques with machine learning. As technological developments in this domain continue to advance, the scope and impact of these applications are anticipated to broaden, highlighting the significance of privacy-preserving methodologies in the evolution of AI/ML capabilities.\
+Demo Video:[ Watch on YouTube →<br>](https://youtu.be/HwkWEQX0n94)(Shows private token transfer between wallets using COTI V2’s confidential transaction layer.)
 
-4. **Dynamic Decentralized Identification (DyDID)**\
-   COTI V2 facilitates a paradigm where identity verification and personal data management are executed with- out exposing actual data to third parties. Users maintain control over their information while fulfilling Know Your Customer (KYC) requirements. This framework allows for secure, privacy-preserving interactions be- tween digital identities and dApps, enabling trustless, regulated environments for global service applications without compromising sensitive data. \
-   \
-   The advent of COTI V2, with its state-of-the-art garbled circuit technology, addresses the critical privacy challenges impeding Web3’s broader adoption. It offers superior solutions to the privacy issues prevalent in Web2 industries, presenting substantial opportunities for business innovation. Developers worldwide are invited to participate in the upcoming COTI V2 Devnet, contributing to the evolution of a more private, secure, and user-friendly Web3 ecosystem.
+Why it matters
+
+* Protects user and business financial data
+* Enables compliant, private settlements
+* Supports any ERC-20-style token deployed on COTI<br>
+
+### 2. Confidential DeFi
+
+Privex: A Perpetual DEX with privacy built-in
+
+DeFi transformed finance — but its radical transparency comes with risks.\
+On-chain positions, liquidations, and strategies are visible to everyone, deterring institutional use and automated trading strategies.
+
+COTI V2 enables confidential DeFi: all trades, positions, and settlement data remain encrypted while still verifiable. This ensures compliance readiness while safeguarding user privacy.
+
+![](<../../.gitbook/assets/unknown (8).png>)
+
+Demo:[ Watch on X (Twitter) →](https://www.youtube.com/watch?v=6dVypDtk9VY)
+
+Why it matters
+
+* Enables institutional participation in DeFi
+* Protects trading strategies and portfolio data
+* Retains transparency through auditable proofs
+* Complies with evolving regulatory frameworks\
+  <br>
+
+### 3. Private Voting
+
+Confidential voting and governance
+
+COTI’s privacy infrastructure powers secure, verifiable, and anonymous voting — ideal for DAOs, enterprises, or even public governance.\
+Votes are cast privately, encrypted end-to-end, and tallied without exposing voter identities or individual choices.
+
+Confidential voting systems maintain the integrity of elections by preserving the privacy of voters’ decisions.
+
+![](<../../.gitbook/assets/unknown (15).png>)
+
+Demo:[ Watch on YouTube →](https://www.youtube.com/watch?v=_RKEkR1KUOA\&list=PLQ1p4uxJCOysr2U-53II0Vxvwe8SS2qI1\&index=5)
+
+Why it matters
+
+* Prevents coercion and vote manipulation
+* Verifiable yet private vote tallying
+* Applicable for DAOs, corporate boards, and communities
+
+<br>
+
+### More to Come
+
+These are just the first applications powered by COTI V2’s confidential computing stack.\
+The same privacy layer can be integrated into:
+
+* Private stablecoins
+* Confidential identity and credential systems
